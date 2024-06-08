@@ -10,7 +10,7 @@ import os
 from websockets_proxy import Proxy, proxy_connect
 
 
-NP_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjEwMjIwNzY'
+NP_TOKEN = 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjQ3MTk5NDczMzAyNTAzNDI0IiwiaWF0IjoxNzE3NTAzMDgyLCJleHAiOjE3MTg3MTI2ODJ9.CvVLy6zisBYy9YVn2-buYH9q53GPEbz9a1O_gRNNBEFNbnkgvLCgVj5Wf7QfK-Bzyz3Dpm6owM2sE2IYSNbk7Q'
 
 
 WEBSOCKET_URL = "wss://nw.nodepay.ai:4576/websocket"
