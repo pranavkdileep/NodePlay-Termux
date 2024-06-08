@@ -1,4 +1,5 @@
-
+from flask import Flask
+import threading
 import asyncio
 import requests
 import json
@@ -106,5 +107,15 @@ async def connect_socket(token, reconnect_interval=RETRY_INTERVAL, ping_interval
 async def main():
     await connect_socket(NP_TOKEN)
 
+#run main function in thread
+thread = threading.Thread(target=lambda: asyncio.run(main()))
+thread.start()
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Hello World!"
+
 if __name__ == '__main__':
-    asyncio.run(main())
+    app.run(debug=True)

@@ -1,6 +1,11 @@
-from python:3.9
+FROM python:3.9
 
-workdir /app
-copy . /app
-run pip install -r requirements.txt
-cmd ["python3","nodeplay.py"]
+WORKDIR /app
+COPY . /app
+
+RUN pip install  -r requirements.txt
+
+EXPOSE 7860
+
+
+CMD ["gunicorn", "-b", "0.0.0.0:7860", "main:app"]

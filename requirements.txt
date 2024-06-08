@@ -10,3 +10,8 @@ requests==2.32.3
 urllib3==2.2.1
 websockets==12.0
 websockets_proxy==0.1.2
+fake_useragent
+loguru
+websockets_proxy
+flask
+gunicorn
