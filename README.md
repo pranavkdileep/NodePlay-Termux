@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ## Configuration
 
 #Get NP_TOKEN
-1. Go to [NodePlay](https://nodeplay.io)
+1. Go to [NodePlay](https://app.nodepay.ai/register?ref=veSvPdiRAekyAXq)
 2. Sign in with your account
 3.Inspect Element and go to the Console tab
 4. Type `localStorage.getItem('np_token');` and press Enter
