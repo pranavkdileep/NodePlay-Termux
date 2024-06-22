@@ -11,8 +11,7 @@ import os
 from websockets_proxy import Proxy, proxy_connect
 
 
-NP_TOKEN = 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjQ3MTk5NDczMzAyNTAzNDI0IiwiaWF0IjoxNzE3NTAzMDgyLCJleHAiOjE3MTg3MTI2ODJ9.CvVLy6zisBYy9YVn2-buYH9q53GPEbz9a1O_gRNNBEFNbnkgvLCgVj5Wf7QfK-Bzyz3Dpm6owM2sE2IYSNbk7Q'
-
+NP_TOKEN = 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjQ3MTk5NDczMzAyNTAzNDI0IiwiaWF0IjoxNzE4OTc4NjcyLCJleHAiOjE3MjAxODgyNzJ9.4s0iTw0KL3saiSOgIFDEStq7qoavDsN36XV3Xj-nJglo-WO4mXX3OJCNSie_bH67tQCRmyXlPm0EfdGAvJ28Ng'
 
 WEBSOCKET_URL = "wss://nw.nodepay.ai:4576/websocket"
 RETRY_INTERVAL = 60000  # in milliseconds
